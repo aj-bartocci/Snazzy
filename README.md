@@ -4,7 +4,7 @@
 
 ## Instantly generate documentation for you app theme, and view it in an interactive preview. 
 
-![preivew example gif](https://raw.githubusercontent.com/aj-bartocci/Snazzy/master/Images/snazzy.gif "Interactive preview")
+<img src="https://raw.githubusercontent.com/aj-bartocci/Snazzy/master/Images/snazzy.gif" width="300px">
 
 ## Goals
 * Centralize app styling logic in a theme
