@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Snazzy",
+        "repositoryURL": "https://github.com/aj-bartocci/Snazzy.git",
+        "state": {
+          "branch": null,
+          "revision": "cb2a4b7e36a37b9509353dd26d09dc3b7d80a33f",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

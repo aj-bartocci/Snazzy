@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,8 +19,7 @@
 		210FC4242405859E00DE1B6A /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 210FC41D2405859E00DE1B6A /* Roboto-Bold.ttf */; };
 		210FC4252405859E00DE1B6A /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 210FC41E2405859E00DE1B6A /* Roboto-BoldItalic.ttf */; };
 		210FC4262405859E00DE1B6A /* PlayfairDisplay-Italic-VariableFont:wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 210FC41F2405859E00DE1B6A /* PlayfairDisplay-Italic-VariableFont:wght.ttf */; };
-		210FC42E2405A1ED00DE1B6A /* Snazzy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 210FC42D2405A1ED00DE1B6A /* Snazzy.framework */; };
-		210FC42F2405A1ED00DE1B6A /* Snazzy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 210FC42D2405A1ED00DE1B6A /* Snazzy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		210FC4332405A31B00DE1B6A /* Snazzy in Frameworks */ = {isa = PBXBuildFile; productRef = 210FC4322405A31B00DE1B6A /* Snazzy */; };
 		211E85A92404B631005F28C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E85A82404B631005F28C1 /* AppDelegate.swift */; };
 		211E85AB2404B631005F28C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E85AA2404B631005F28C1 /* SceneDelegate.swift */; };
 		211E85AD2404B631005F28C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E85AC2404B631005F28C1 /* ViewController.swift */; };
@@ -31,20 +30,6 @@
 		211E85C42404BED4005F28C1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E85C32404BED4005F28C1 /* Colors.swift */; };
 		211E85C62404C64D005F28C1 /* ComponentStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E85C52404C64D005F28C1 /* ComponentStyles.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		210FC4302405A1ED00DE1B6A /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				210FC42F2405A1ED00DE1B6A /* Snazzy.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		210FC4042404C6AB00DE1B6A /* ActionButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonStyle.swift; sourceTree = "<group>"; };
@@ -79,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				210FC42E2405A1ED00DE1B6A /* Snazzy.framework in Frameworks */,
+				210FC4332405A31B00DE1B6A /* Snazzy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +176,6 @@
 				211E85A12404B631005F28C1 /* Sources */,
 				211E85A22404B631005F28C1 /* Frameworks */,
 				211E85A32404B631005F28C1 /* Resources */,
-				210FC4302405A1ED00DE1B6A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +183,7 @@
 			);
 			name = BasicSnazzyExample;
 			packageProductDependencies = (
+				210FC4322405A31B00DE1B6A /* Snazzy */,
 			);
 			productName = BasicSnazzyExample;
 			productReference = 211E85A52404B631005F28C1 /* BasicSnazzyExample.app */;
@@ -229,6 +214,7 @@
 			);
 			mainGroup = 211E859C2404B631005F28C1;
 			packageReferences = (
+				210FC4312405A31B00DE1B6A /* XCRemoteSwiftPackageReference "Snazzy" */,
 			);
 			productRefGroup = 211E85A62404B631005F28C1 /* Products */;
 			projectDirPath = "";
@@ -472,6 +458,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		210FC4312405A31B00DE1B6A /* XCRemoteSwiftPackageReference "Snazzy" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aj-bartocci/Snazzy.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		210FC4322405A31B00DE1B6A /* Snazzy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 210FC4312405A31B00DE1B6A /* XCRemoteSwiftPackageReference "Snazzy" */;
+			productName = Snazzy;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 211E859D2404B631005F28C1 /* Project object */;
 }
