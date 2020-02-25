@@ -4,7 +4,7 @@
 
 ## Instantly generate documentation for you app theme, and view it in an interactive preview. 
 
-![preivew example gif](https://raw.githubusercontent.com/aj-bartocci/test-snazzy/master/Images/snazzy.gif "Interactive preview")
+![preivew example gif](https://raw.githubusercontent.com/aj-bartocci/Snazzy/master/Images/snazzy.gif "Interactive preview")
 
 ## Goals
 * Centralize app styling logic in a theme
@@ -18,7 +18,7 @@ It's true there are plenty of theming options out there and it's not hard to rol
 
 With snazzy you get theming support that allows you to style your elements so you can go from unstyled IB view controllers to styled view controllers like: 
 
-![before after example](https://raw.githubusercontent.com/aj-bartocci/test-snazzy/master/Images/before_after.png "Before and after styling")
+![before after example](https://raw.githubusercontent.com/aj-bartocci/Snazzy/master/Images/before_after.png "Before and after styling")
 
 This is nice but not anything crazy. However, Snazzy will automatically generate an interactive preview (gif seen above) from your theme. The preview that Snazzy generates is a tableview showing all the elements that you defined in your theme. You can instantly see the fonts and colors, as well as example elements that are styled by your theme. This is quite powerful because it provides living documentation to your theme. Any changes you make to your theme are picked up in the generated preview via Swift's Mirroring capabilities.
 
