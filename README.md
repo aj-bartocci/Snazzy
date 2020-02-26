@@ -214,9 +214,10 @@ struct Colors {
 }
 ```
 
-## Features to add 
+## TODO 
 * cross platform support for macOS and tvOS 
 * nested theme properties (see Gotchas)
+* cocoapod support
 
 ## Gotchas: 
     
