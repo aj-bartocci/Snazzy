@@ -8,6 +8,8 @@
 
 <img src="https://raw.githubusercontent.com/aj-bartocci/Snazzy/master/Images/snazzy.gif" width="300px">
 
+The table view in this gif was generated automatically by snazzy
+
 ## Goals
 * Centralize app styling logic in a theme
 * Generate living documentation for a theme 
