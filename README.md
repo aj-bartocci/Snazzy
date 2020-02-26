@@ -1,5 +1,7 @@
 #  Snazzy Themes
 
+<img src="https://raw.githubusercontent.com/aj-bartocci/Snazzy/master/Images/snazzy_icon.png" width="160px" height="160px">
+
 #### This is a Work In Progress, not a complete project as of yet. There are still some design decisions that need to be made. This is inspired by [storybook js](https://storybook.js.org)
 
 ## Instantly generate documentation for you app theme, and view it in an interactive preview. 
@@ -14,7 +16,7 @@
 
 ## X already exists for theming why should I use Snazzy Themes? 
 
-It's true there are plenty of theming options out there and it's not hard to role your own, so why is this any different?
+It's true there are plenty of theming options out there and it's not hard to roll your own, so why is this any different?
 
 With snazzy you get theming support that allows you to style your elements so you can go from unstyled IB view controllers to styled view controllers like: 
 
