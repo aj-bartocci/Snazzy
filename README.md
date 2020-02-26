@@ -35,7 +35,7 @@ BasicSnazzyExample is a basic app that demonstrates what Snazzy is intended to d
 
 ## How it works 
 
-You create a theme by create a struct or class that conforms to Themeable. Themeable is a generic protocol with 4 properties that must be defined.
+You create a theme by creating a struct or class that conforms to Themeable. Themeable is a generic protocol with 4 properties that must be defined.
 
 ```swift 
 public protocol Themeable {
@@ -48,6 +48,7 @@ public protocol Themeable {
     var typeStyle: TypeStyleContainer { get }
     var color: ColorContainer { get }
     var font: FontContainer { get }
+}
 ```
 
 - The font property contains any fonts you want to include in your theme.
@@ -55,7 +56,7 @@ public protocol Themeable {
 - The typeStyle property contains stylings for your fonts. For example you might define a Header type style that sets a font to a specific size. 
 - The componentStyle property contains stylings for your UI elements. Fore exmaple you might have an ActionButton style that styles a button to look a certain way. 
 
-Why have fonts and typeStyles? This is so that you can separate a font from what it is used for. You may want to use a certain font as body text and header text, by using typeStyles you can create a BodyTypeStyle and HeaderTypeStyle. This is so that you can reuse font 'styles' instead of having to specifiy a font size everywhere.
+Why have fonts and typeStyles? This is so that you can separate a font from what it is used for. You may want to use a certain font as body text and header text, by using typeStyles you can create a BodyTypeStyle and HeaderTypeStyle. This is so that you can reuse font 'styles' instead having duplicate logic throughout your app like font sizing, and to provide a further layer of abstraciton in case you change the font, etc for a particular style at a later time.
 
 BasicSnazzyExample has a Theme that looks like this: 
 ```swift
