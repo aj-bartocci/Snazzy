@@ -4,7 +4,7 @@
 
 ## Instantly generate documentation for you app theme, and view it in an interactive preview. 
 
-![preivew example gif](https://raw.githubusercontent.com/aj-bartocci/test-snazzy/master/Images/snazzy.gif "Interactive preview")
+<img src="https://raw.githubusercontent.com/aj-bartocci/Snazzy/master/Images/snazzy.gif" width="300px">
 
 ## Goals
 * Centralize app styling logic in a theme
@@ -18,7 +18,7 @@ It's true there are plenty of theming options out there and it's not hard to rol
 
 With snazzy you get theming support that allows you to style your elements so you can go from unstyled IB view controllers to styled view controllers like: 
 
-![before after example](https://raw.githubusercontent.com/aj-bartocci/test-snazzy/master/Images/before_after.png "Before and after styling")
+![before after example](https://raw.githubusercontent.com/aj-bartocci/Snazzy/master/Images/before_after.png "Before and after styling")
 
 This is nice but not anything crazy. However, Snazzy will automatically generate an interactive preview (gif seen above) from your theme. The preview that Snazzy generates is a tableview showing all the elements that you defined in your theme. You can instantly see the fonts and colors, as well as example elements that are styled by your theme. This is quite powerful because it provides living documentation to your theme. Any changes you make to your theme are picked up in the generated preview via Swift's Mirroring capabilities.
 
@@ -33,7 +33,7 @@ BasicSnazzyExample is a basic app that demonstrates what Snazzy is intended to d
 
 ## How it works 
 
-You create a theme by create a struct or class that conforms to Themeable. Themeable is a generic protocol with 4 properties that must be defined. 
+You create a theme by create a struct or class that conforms to Themeable. Themeable is a generic protocol with 4 properties that must be defined.
 
 ```swift 
 public protocol Themeable {
@@ -53,6 +53,8 @@ public protocol Themeable {
 - The typeStyle property contains stylings for your fonts. For example you might define a Header type style that sets a font to a specific size. 
 - The componentStyle property contains stylings for your UI elements. Fore exmaple you might have an ActionButton style that styles a button to look a certain way. 
 
+Why have fonts and typeStyles? This is so that you can separate a font from what it is used for. You may want to use a certain font as body text and header text, by using typeStyles you can create a BodyTypeStyle and HeaderTypeStyle. This is so that you can reuse font 'styles' instead of having to specifiy a font size everywhere.
+
 BasicSnazzyExample has a Theme that looks like this: 
 ```swift
 import Snazzy
@@ -67,6 +69,8 @@ struct AppTheme: Themeable {
 // A global variable for the theme
 let Theme = Snazzy.Theme(AppTheme())
 ```
+
+Snazzy.Theme is a generic struct that holds your theme. It contains one function generatedPreviewViewController which will mirror your theme to generate a preview view controller.
 
 Throughout the app the theme can be referenced by Theme.current
 
